@@ -1,0 +1,13 @@
+# Credentials and local environment
+*.pem
+*.ppk
+.env
+.env.*
+!.env.example
+.aws/
+**/credentials
+*.key
+*.p12
+*.pfx
+.DS_Store
+Thumbs.db

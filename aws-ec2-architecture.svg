@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img" aria-label="AWS EC2 textbook catalogue architecture">
+<rect width="1100" height="600" fill="#f6f9fc"/>
+<text x="550" y="46" font-family="Arial" font-size="27" font-weight="bold" text-anchor="middle" fill="#132b42">AWS EC2 Textbook Catalogue — Lab Architecture</text>
+<text x="550" y="75" font-family="Arial" font-size="15" text-anchor="middle" fill="#52687c">Region: eu-west-1 (Ireland) • Single-AZ educational deployment • HTTP only</text>
+<rect x="45" y="230" width="160" height="115" rx="14" fill="#dceefa" stroke="#387cb2" stroke-width="2"/>
+<text x="125" y="273" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold" fill="#12304d">Browser</text>
+<text x="125" y="301" text-anchor="middle" font-family="Arial" font-size="14" fill="#12304d">HTTP request</text>
+<text x="125" y="323" text-anchor="middle" font-family="Arial" font-size="13" fill="#12304d">TCP 80</text>
+<path d="M205 287 H295" stroke="#24639a" stroke-width="3" fill="none"/><path d="M285 279 L298 287 L285 295" stroke="#24639a" stroke-width="3" fill="none"/>
+<rect x="295" y="235" width="120" height="105" rx="12" fill="#fff1d5" stroke="#c98b22" stroke-width="2"/>
+<text x="355" y="274" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#68400c">Internet</text><text x="355" y="300" text-anchor="middle" font-family="Arial" font-size="15" fill="#68400c">Gateway</text>
+<path d="M415 287 H480" stroke="#24639a" stroke-width="3" fill="none"/><path d="M470 279 L483 287 L470 295" stroke="#24639a" stroke-width="3" fill="none"/>
+<rect x="475" y="122" width="580" height="380" rx="18" fill="#e9f3fc" stroke="#377bb3" stroke-width="3"/>
+<text x="502" y="157" font-family="Arial" font-size="19" font-weight="bold" fill="#1e527e">VPC: textbook-lab-vpc (10.0.0.0/16)</text>
+<rect x="505" y="179" width="515" height="284" rx="14" fill="#e4f5e8" stroke="#42945e" stroke-width="2"/>
+<text x="526" y="209" font-family="Arial" font-size="18" font-weight="bold" fill="#246b40">Public subnet: 10.0.0.0/20 • eu-west-1a</text>
+<rect x="535" y="239" width="455" height="72" rx="12" fill="#fff4d8" stroke="#d29d32" stroke-width="2"/>
+<text x="762" y="267" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#704b12">Security group: textbook-lab-web-sg</text>
+<text x="762" y="291" text-anchor="middle" font-family="Arial" font-size="14" fill="#704b12">HTTP 80 public • SSH 22 restricted (verify saved source)</text>
+<path d="M762 311 V330" stroke="#24639a" stroke-width="3"/><path d="M754 322 L762 333 L770 322" stroke="#24639a" stroke-width="3" fill="none"/>
+<rect x="585" y="335" width="355" height="101" rx="12" fill="#fff" stroke="#377bb3" stroke-width="2"/>
+<text x="762" y="364" text-anchor="middle" font-family="Arial" font-size="19" font-weight="bold" fill="#12304d">Amazon EC2 • t3.micro</text>
+<text x="762" y="387" text-anchor="middle" font-family="Arial" font-size="15" fill="#12304d">Amazon Linux 2023 + Apache (httpd)</text>
+<text x="762" y="409" text-anchor="middle" font-family="Arial" font-size="15" fill="#12304d">/var/www/html/index.html</text>
+<text x="762" y="427" text-anchor="middle" font-family="Arial" font-size="12" fill="#52687c">8 GiB encrypted gp3 EBS root volume</text>
+<text x="550" y="547" text-anchor="middle" font-family="Arial" font-size="14" fill="#52687c">Simplified logical view. Confirm route-table association and IGW attachment in AWS console.</text>
+</svg>
