@@ -1,11 +1,19 @@
-# Screenshot evidence
 
-`website-live.png` is the user-provided screenshot showing the successfully deployed public catalogue homepage.
+## AWS Architecture Diagram
 
-For additional screenshots, capture and **redact account identifiers and personal details** before adding:
+The following diagram illustrates the AWS infrastructure used to host the textbook catalogue website.
 
-- `ec2-instance.png`: EC2 running and checks passed.
-- `security-group.png`: HTTP and restricted SSH rules.
-- `apache-running.png`: terminal showing Apache active.
+![AWS EC2 Architecture](architecture/aws-ec2-architecture.svg)
 
-These optional screenshots are not included because the original AWS console screenshots expose identifying account details. Do not claim they are present until added.
+## Screenshot Evidence
+
+The screenshot below shows the successfully deployed textbook catalogue website running on Amazon EC2.
+
+![Live Textbook Catalogue Website](screenshots/website-live.png)
+
+## Project Documentation
+
+- [Deployment Guide](docs/deployment-guide.md)
+- [Security Configuration](docs/security.md)
+- [Troubleshooting Guide](docs/troubleshooting.md)
+- [Cost Management and Cleanup](docs/cost-and-cleanup.md)
